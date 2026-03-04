@@ -2,13 +2,13 @@
 
 An end-to-end machine learning project that classifies ambient sounds in real time using deep learning, deployed as an Android mobile application with TensorFlow Lite.
 
-> 📄 **Published Paper** — This project is backed by a peer-reviewed publication. See the `/paper` folder for the full paper.
+> 📄 **Published Paper** : This project is backed by a peer-reviewed publication. See the `/paper` folder for the full paper.
 
 ---
 
 ## 📌 Overview
 
-This project tackles the problem of ambient sound classification — detecting sounds like baby crying, dog barking, fire alarms, coughing, doorbells, thunder, and more — using convolutional neural networks trained on audio spectrograms.
+This project tackles the problem of ambient sound classification - detecting sounds like baby crying, dog barking, fire alarms, coughing, doorbells, thunder, and more - using convolutional neural networks trained on audio spectrograms.
 
 The trained model is converted to `.tflite` format and integrated into an Android app for real-time on-device inference, with an optional Raspberry Pi integration for remote alerting via Firebase.
 
@@ -56,7 +56,7 @@ The best-performing model was converted to TensorFlow Lite (`.tflite`) and deplo
 
 A Raspberry Pi script (`raspberry-pi/SendFirebase.py`) captures audio and sends detection alerts to a Firebase Realtime Database for remote monitoring.
 
-> ⚠️ To use this, add your own Firebase service account credentials (never commit the `.json` file — add it to `.gitignore`).
+> ⚠️ To use this, add your own Firebase service account credentials (never commit the `.json` file - add it to `.gitignore`).
 
 ---
 
