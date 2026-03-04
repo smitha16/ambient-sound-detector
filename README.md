@@ -103,10 +103,9 @@ ambient-sound-detector/
 │   ├── training/           ← Model training notebooks
 │   └── analysis/           ← Model comparison & evaluation
 ├── tflite/                 ← Converted .tflite model
-├── raspberry-pi/           ← Firebase alert script
+├── raspberry/           ← Firebase alert script
 ├── paper/                  ← Published research paper (PDF)
-├── screenshots/            ← App demo screenshots
-├── INSTALLATION.md
+├── INSTALLATION.txt
 └── README.md
 ```
 

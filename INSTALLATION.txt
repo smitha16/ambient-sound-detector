@@ -1,0 +1,42 @@
+Installation
+
+Here is a step by step guide to setup the project - 
+
+1. Download the mobile application , AmbientSoundDetector.apk, on an adroid phone. It is in Mobile Application folder. 
+
+2. Connect the Raspberry Pi 3 which has the USB Microphone mounted on it to a laptop. 
+   Steps for installing raspbian:
+	Step 1: Download and Install Raspberry Pi Imager.
+	Step 2: Run Raspberry Pi Imager and Format the SD Card.
+	Step 3: Burn the Raspberry Pi OS Image to the SD Card.
+   Remote login to the Pi via SSH via PuTTy from Windows requires the following:
+	Step 1: Download & install the PuTTy application.
+	Step 2: Enter the Pi's ip address in the Host Name Box on port 22.
+	Step 3: Select SSH as connection type.
+	Step 4: Click Open button.
+	Step 5: Accept the Server's key finger print.
+	Step 6: Login as user pi with the password raspberry by default.
+
+3. VNC - Remote access to a Raspberry Pi:
+	Step 1: Enable VNC
+	Step 2: Open VNC Viewer
+	Step 3: Connect to Raspberry PI
+	Step 4: Remote Control
+	Step 5: Access RPI
+
+4. Create two folders Source and Data on Raspberry Pi and update thier paths in the program. 
+   Run the python program named sendFirebase.py to upload the sounds to firebase from raspberry pi in the Raspberry Folder. 
+   Upload the pythonconnect json file to the same folder as the python program. 
+
+5. Installing commands to record sound:
+	1. sudo apt install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev flac
+	2. sudo nano /usr/share/alsa/alsa.conf
+	3. arecord -d 5 -r 48000 babycry1.wav
+   Run the commands to record sounds on the raspberry CLI in the source folder path and record the real-time sounds.
+   Run the commands to record the sounds everytime a new loop int the program starts. 
+    
+7. Keep the app open on an android phone with internet connection to get notified on the real-time sounds. 
+   Customize the type of notification as either vibration or torch light.
+
+
+
