@@ -87,8 +87,6 @@ Example response:
 
 Tech stack: Python 3.8, Flask, TensorFlow Lite, Librosa, Firebase Admin SDK, Pyrebase
 
-> The server currently has hardcoded Firebase credentials that should be moved to a `.env` file before pushing to GitHub. Never commit the Firebase service account `.json` file.
-
 Setup:
 ```bash
 cd server/
