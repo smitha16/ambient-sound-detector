@@ -152,8 +152,3 @@ ambient-sound-detector/
 ```
 
 ---
-
-## Author
-
-**Smitha S Maganti**
-[LinkedIn](https://www.linkedin.com/in/smitha-s-maganti/) | [GitHub](https://github.com/smitha16)
