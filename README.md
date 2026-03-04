@@ -54,7 +54,7 @@ The best-performing model was converted to TensorFlow Lite (`.tflite`) and deplo
 
 ## 🍓 Raspberry Pi Integration
 
-A Raspberry Pi script (`raspberry-pi/SendFirebase.py`) captures audio and sends detection alerts to a Firebase Realtime Database for remote monitoring.
+A Raspberry Pi script (`Raspberry/SendFirebase.py`) captures audio and sends detection alerts to a Firebase Realtime Database for remote monitoring.
 
 > ⚠️ To use this, add your own Firebase service account credentials (never commit the `.json` file - add it to `.gitignore`).
 
@@ -89,7 +89,7 @@ jupyter notebook
 pip install firebase-admin pyaudio
 
 # Add your Firebase credentials JSON (do not commit)
-python raspberry-pi/SendFirebase.py
+python Raspberry/SendFirebase.py
 ```
 
 ---
@@ -103,7 +103,7 @@ ambient-sound-detector/
 │   ├── training/           ← Model training notebooks
 │   └── analysis/           ← Model comparison & evaluation
 ├── tflite/                 ← Converted .tflite model
-├── raspberry/           ← Firebase alert script
+├── Raspberry/              ← Firebase alert script
 ├── paper/                  ← Published research paper (PDF)
 ├── INSTALLATION.txt
 └── README.md
